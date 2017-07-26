@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!--导航条-->
+<nav id="app" class="navbar navbar-default navbar-static-top">
+    <!--头部导航条-->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#left_navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">后台</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right" id="news">
+        <li><a href="#"><span class="badge" style="background: red">&nbsp;20</span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-off">&nbsp;注销</span></a></li>
+    </ul>
+
+    <!--左边导航-->
+    <div class="navbar-default" id="left_navbar">
+        <ul class="nav">
+            <li>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="搜索">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </li>
+            <li id="win"><a href="#sub1" class="collapse" data-toggle="collapse"> 系统<span
+                    class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                <ul id="sub1" class="collapse">
+                    <li id="sub1_1"><a href="#"><span class="glyphicon glyphicon-th-large">&nbsp;</span>系统主页</a></li>
+                    <li id="sub1_2"><a href="#"><span class="glyphicon glyphicon-blackboard">&nbsp;</span>系统功能</a></li>
+                    <li id="sub1_3"><a href="#"><span class="glyphicon glyphicon-off">&nbsp;</span>退出</a></li>
+                </ul>
+            </li>
+            <li id="manage"><a href="#sub2" class="collapse" data-toggle="collapse">管理<span
+                    class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                <ul id="sub2" class="collapse">
+                    <li id="sub2_1"><a href="#manage1"><span class="glyphicon glyphicon-home">&nbsp;</span>首页</a></li>
+                    <li id="sub2_2"><a href="#manage2"><span class="glyphicon glyphicon-user">&nbsp;</span>部门管理</a></li>
+                    <li id="sub2_3"><a href="#manage3"><span class="glyphicon glyphicon-list-alt">&nbsp;</span>订单管理</a></li>
+                </ul>
+            </li>
+            <li id="case"><a href="#sub3" class="collapse" data-toggle="collapse">产品<span
+                    class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                <ul id="sub3" class="collapse">
+                    <li id="sub3_1"><a href="#"><span class="glyphicon glyphicon-list">&nbsp;</span>产品样式</a></li>
+                    <li id="sub3_2"><a href="#"><span class="glyphicon glyphicon-education">&nbsp;</span>产品研发</a></li>
+                    <li id="sub3_3"><a href="#"><span class="glyphicon glyphicon-off">&nbsp;</span>退出</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--主页-->
+<div class="container" id="mian_page">
+    <ul id="myTabs1" class="nav nav-tabs navbar-default">
+        <li id="win1"><a href="#Q1" data-toggle="tab">系统首页</a></li>
+        <li id="win2"><a href="#Q2" data-toggle="tab">系统部门管理</a></li>
+        <li id="win3"><a href="#Q3" data-toggle="tab">系统订单管理</a></li>
+    </ul>
+    <ul id="myTabs2" class="nav nav-tabs navbar-default">
+        <li id="manage1"><a href="#Q1" data-toggle="tab">管理首页</a></li>
+        <li id="manage2"><a href="#Q2" data-toggle="tab">管理部门管理</a></li>
+        <li id="manage3"><a href="#Q3" data-toggle="tab">管理订单管理</a></li>
+    </ul>
+    <ul id="myTabs3" class="nav nav-tabs navbar-default">
+        <li id="case1"><a href="#Q1" data-toggle="tab">产品首页</a></li>
+        <li id="case2"><a href="#Q2" data-toggle="tab">产品部门管理</a></li>
+        <li id="case3"><a href="#Q3" data-toggle="tab">产品管理订单</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <!--具体显示的内容-->
+        <div class="tab-pane" id="Q1">
+            <div class="panel panel-default">
+                <div class="panel-heading">首页</div>
+                <div class="panel-body">
+                    <h4>内部公告：</h4>
+                    <p>
+                        近期情况：很不错呀很不错！很不错呀很不错！很不错呀很不错！很不错呀很不错！！
+                        近期情况：很不错呀很不错！很不错呀很不错！很不错呀很不错！很不错呀很不错！！
+                        近期情况：很不错呀很不错！很不错呀很不错！很不错呀很不错！很不错呀很不错！！
+                        近期情况：很不错呀很不错！很不错呀很不错！很不错呀很不错！很不错呀很不错！！
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="Q2">
+            <div class="panel panel-default">
+                <div class="panel-heading">部门管理</div>
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>部门名称</th>
+                            <th>员工姓名</th>
+                            <th>员工性别</th>
+                            <th>入职日期</th>
+                            <th>所在职位</th>
+                            <th>备注</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td><td>销售部</td><td>小白</td><td>男</td><td>2001/1/1</td><td>销售</td><td>null</td>
+                        </tr><tr>
+                            <td>2</td><td>人事部</td><td>小红</td><td>男</td><td>2001/1/1</td><td>人事</td><td>null</td>
+                        </tr><tr>
+                            <td>3</td><td>行政部</td><td>小黑</td><td>男</td><td>2001/1/1</td><td>行政</td><td>null</td>
+                        </tr><tr>
+                            <td>4</td><td>财务部</td><td>小绿</td><td>男</td><td>2001/1/1</td><td>财务</td><td>null</td>
+                        </tr><tr>
+                            <td>5</td><td>研发部</td><td>小黄</td><td>男</td><td>2001/1/1</td><td>研发</td><td>null</td>
+                        </tr><tr>
+                            <td>6</td><td>售后部</td><td>小蓝</td><td>男</td><td>2001/1/1</td><td>售后</td><td>null</td>
+                        </tr><tr>
+                            <td>7</td><td>收货部</td><td>小灰</td><td>男</td><td>2001/1/1</td><td>库管</td><td>null</td>
+                        </tr><tr>
+                            <td>8</td><td>产品部</td><td>小橙</td><td>男</td><td>2001/1/1</td><td>策划</td><td>null</td>
+                        </tr><tr>
+                            <td>9</td><td>市场部</td><td>小粉</td><td>男</td><td>2001/1/1</td><td>推广</td><td>null</td>
+                        </tr><tr>
+                            <td>10</td><td>综合部</td><td>小紫</td><td>男</td><td>2001/1/1</td><td>全能</td><td>null</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <ul class="pagination pull-right">
+                        <li><a href="#">&laquo;上一页</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">下一页&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="Q3">
+            <div class="panel panel-default">
+                <div class="panel-heading">订单详情</div>
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>序 号</th>
+                            <th>订 单 号</th>
+                            <th>订单日期</th>
+                            <th>订单价格</th>
+                            <th>订单状态</th>
+                            <th>备 注</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>12345</td>
+                            <td>2001/1/2/</td>
+                            <td>123.4</td>
+                            <td>出库</td>
+                            <td>null</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>12345</td>
+                            <td>2001/1/2/</td>
+                            <td>123.4</td>
+                            <td>出库</td>
+                            <td>null</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>12345</td>
+                            <td>2001/1/2/</td>
+                            <td>123.4</td>
+                            <td>出库</td>
+                            <td>null</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>12345</td>
+                            <td>2001/1/2/</td>
+                            <td>123.4</td>
+                            <td>出库</td>
+                            <td>null</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>12345</td>
+                            <td>2001/1/2/</td>
+                            <td>123.4</td>
+                            <td>出库</td>
+                            <td>null</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>12345</td>
+                            <td>2001/1/2/</td>
+                            <td>123.4</td>
+                            <td>出库</td>
+                            <td>null</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>12345</td>
+                            <td>2001/1/2/</td>
+                            <td>123.4</td>
+                            <td>出库</td>
+                            <td>null</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>12345</td>
+                            <td>2001/1/2/</td>
+                            <td>123.4</td>
+                            <td>出库</td>
+                            <td>null</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>12345</td>
+                            <td>2001/1/2/</td>
+                            <td>123.4</td>
+                            <td>出库</td>
+                            <td>null</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>12345</td>
+                            <td>2001/1/2/</td>
+                            <td>123.4</td>
+                            <td>出库</td>
+                            <td>null</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <ul class="pagination pull-right">
+                        <li><a href="#">&laquo;上一页</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">下一页&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script type="text/javascript">
+    /*主页内容显示切换*/
+    //系统
+    $("#sub1_1").on("click",function () {
+        $("#win1").addClass("active")
+        $("#win2").removeClass("active")
+        $("#win3").removeClass("active")
+        $("#Q1").addClass("active")
+        $("#Q2").removeClass("active")
+        $("#Q3").removeClass("active")
+    })
+    $("#sub1_2").on("click",function () {
+        $("#win1").removeClass("active")
+        $("#win2").addClass("active")
+        $("#win3").removeClass("active")
+        $("#Q1").removeClass("active")
+        $("#Q2").addClass("active")
+        $("#Q3").removeClass("active")
+    })
+    $("#sub1_3").on("click",function () {
+        $("#win1").removeClass("active")
+        $("#win2").removeClass("active")
+        $("#win3").addClass("active")
+        $("#Q1").removeClass("active")
+        $("#Q2").removeClass("active")
+        $("#Q3").addClass("active")
+    })
+    //管理
+    $("#sub2_1").on("click", function(){
+        $('#manage1').addClass('active')
+        $('#manage2').removeClass('active')
+        $('#manage3').removeClass('active')
+        $('#Q1').addClass('active')
+        $('#Q2').removeClass('active')
+        $('#Q3').removeClass('active')
+    })
+    $("#sub2_2").on("click", function(){
+        $('#manage1').removeClass('active')
+        $('#manage2').addClass('active')
+        $('#manage3').removeClass('active')
+        $('#Q1').removeClass('active')
+        $('#Q2').addClass('active')
+        $('#Q3').removeClass('active')
+    })
+    $("#sub2_3").on("click", function(){
+        $('#manage1').removeClass('active')
+        $('#manage2').removeClass('active')
+        $('#manage3').addClass('active')
+        $('#Q1').removeClass('active')
+        $('#Q2').removeClass('active')
+        $('#Q3').addClass('active')
+    })
+    //产品
+    $("#sub3_1").on("click",function () {
+        $("#case1").addClass("active")
+        $("#case2").removeClass("active")
+        $("#casse3").removeClass("active")
+        $("#Q1").addClass("active")
+        $("#Q2").removeClass("active")
+        $("#Q3").removeClass("active")
+    })
+    $("#sub3_2").on("click",function () {
+        $("#case1").removeClass("active")
+        $("#case2").addClass("active")
+        $("#case3").removeClass("active")
+        $("#Q1").removeClass("active")
+        $("#Q2").addClass("active")
+        $("#Q3").removeClass("active")
+    })
+    $("#sub3_3").on("click",function () {
+        $("#case1").removeClass("active")
+        $("#case2").removeClass("active")
+        $("#case3").addClass("active")
+        $("#Q1").removeClass("active")
+        $("#Q2").removeClass("active")
+        $("#Q3").addClass("active")
+    })
+
+
+
+
+
+    /*主页导航显示切换*/
+    $("#win").on("click",function () {
+        $("#myTabs1").show()
+        $("#myTabs2").hide()
+        $("#myTabs3").hide()
+    })
+    $("#manage").on("click",function () {
+        $("#myTabs1").hide()
+        $("#myTabs2").show()
+        $("#myTabs3").hide()
+    })
+    $("#case").on("click",function () {
+        $("#myTabs1").hide()
+        $("#myTabs2").hide()
+        $("#myTabs3").show()
+    })
+</script>
+</body>
+</html>
